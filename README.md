@@ -1,16 +1,22 @@
 # Deep Image Matting
 
+image matting from [this repo](https://github.com/foamliu/Deep-Image-Matting) just cleaned from the training stuff
+
 ## Dependencies
 
-install deps with
+- install deps with
 
 ```
 pip install -r requirements.txt
 ```
 
-- [NumPy](http://docs.scipy.org/doc/numpy-1.10.1/user/install.html)
-- [Tensorflow 1.9.0](https://www.tensorflow.org/)
-- [Keras 2.1.6](https://keras.io/#installation)
-- [OpenCV](https://opencv-python-tutroals.readthedocs.io/en/latest/)
+- Download the [model](https://github.com/foamliu/Deep-Image-Matting/releases/download/v1.0/final.42-0.0398.hdf5) and
+  place it in _models/_ folder
 
 ## Usage
+
+input, trimap and output should be 320x320 pixels
+
+```
+python main image trimap out
+```
